@@ -144,6 +144,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-content--box > * + * {
@@ -163,6 +169,7 @@ body {
   color: #9698a6;
   line-height: 1.3rem;
   font-family: PublicSans;
+  max-width: 400px;
 }
 
 .invite--button {
@@ -480,6 +487,11 @@ footer {
     place-items: center;
     z-index: 1;
   }
+  .header-content--box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .open-close__container {
     display: none;
   }
@@ -598,6 +610,10 @@ footer {
   .section--1--detail {
     width: 70%;
     max-width: 400px;
+    margin: 0;
+  }
+  .section--1--header {
+    font-size: 2.5rem;
   }
   .section--1-article--title:hover {
     color: #2bb7da;
@@ -608,6 +624,7 @@ footer {
   .section--2-header {
     text-align: left;
     margin-block: 1rem;
+    font-size: 2.5rem;
   }
   .section--2__all_Images {
     -webkit-transition: -webkit-transform  1s;
@@ -676,8 +693,9 @@ footer {
   .images {
     height: 200px;
     overflow: hidden;
-    /* remember to add a breakpoint on responsive web design by adding a wrapper class*/
-    /* This might  be break it yoy don't add it*/
+  }
+  .social_media__svg:hover {
+    fill: #31d35c;
   }
 }
 /*# sourceMappingURL=style.css.map */
